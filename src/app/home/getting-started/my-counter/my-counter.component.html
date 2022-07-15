@@ -1,1 +1,7 @@
-<p>my-counter works!</p>
+<button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" (click)="increment()">Increment</button>
+
+<div class="my-4">Current Count: {{ count$ | async }}</div>
+
+<button class="bg-gray-500 hover:bg-gray-700 text-white font-bold mr-4 py-2 px-4 rounded" (click)="decrement()">Decrement</button>
+
+<button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded" (click)="reset()">Reset Counter</button>
