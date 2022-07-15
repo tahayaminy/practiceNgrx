@@ -1,0 +1,6 @@
+<section class="mt-5 text-center">
+  <h1 *ngIf="days;else daysEnd">{{days}} days left...</h1>
+  <ng-template #daysEnd>
+    <h1>Days Finish!</h1>
+  </ng-template>
+</section>
