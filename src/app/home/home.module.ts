@@ -11,6 +11,10 @@ const routes:Routes=[
   {
     path:'getting-started',
     loadChildren:()=>import('./getting-started/getting-started.module').then(m=>m.GettingStartedModule)
+  },
+  {
+    path:'walk-throught',
+    loadChildren:()=>import('./walkthrough/walkthrough.module').then(m=>m.WalkthroughModule)
   }
 ]
 
@@ -18,7 +22,7 @@ const routes:Routes=[
   declarations: [],
   imports: [
     RouterModule.forChild(routes),
-    CommonModule
+    CommonModule,
   ]
 })
 export class HomeModule { }
