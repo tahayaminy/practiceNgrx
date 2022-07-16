@@ -1,10 +1,11 @@
 <div
-  class="book-item"
+  class="my-5"
   *ngFor="let book of books"
 >
-  <p>{{book.volumeInfo.title}}</p><span> by {{book.volumeInfo.authors}}</span>
+  <p class="mb-0">{{book.volumeInfo.title}}</p><span> by {{book.volumeInfo.authors}}</span>
   <button
     (click)="add.emit(book.id)"
     data-test="add-button"
+    class="ml-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
   >Add to Collection</button>
 </div>

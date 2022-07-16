@@ -1,6 +1,12 @@
-<h2>Books</h2>
-<app-book-list class="book-list" [books]="books$ | async" (add)="onAdd($event)"></app-book-list>
+<section class="grid grid-cols-2">
+  <section class="col-span-1">
+    <h1 class="font-bold">Books</h1>
+    <app-book-list class="book-list" [books]="books$ | async" (add)="onAdd($event)"></app-book-list>
+  </section>
 
-<h2>My Collection</h2>
-<app-book-collection class="book-collection" [books]="bookCollection$ | async" (remove)="onRemove($event)">
-</app-book-collection>
+  <section class="col-span-1">
+    <h1 class="font-bold">My Collection</h1>
+    <app-book-collection class="book-collection" [books]="bookCollection$ | async" (remove)="onRemove($event)">
+    </app-book-collection>
+  </section>
+</section>
