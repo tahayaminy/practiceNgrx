@@ -1,4 +1,4 @@
-import {createFeature, createFeatureSelector, createSelector} from "@ngrx/store";
+import {createFeatureSelector, createSelector} from "@ngrx/store";
 import {Book} from "../book-list/books.model";
 
 export const selectBooks=createFeatureSelector<ReadonlyArray<Book>>('books');
